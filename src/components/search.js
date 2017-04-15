@@ -1,13 +1,23 @@
 angular.module('video-player')
 
+.controller('SearchController', function() {
+  this.handleClick = () => {
+    this.service.search(this.input, (data) => {
+      this.result(data);
+    });
+  };
+})
 .directive('search', function() {
   return {
-    scope: {},
+
+    scope: {
+      service: '<',
+      result: '<'
+    },
+    restrict: 'E',
+    controller: 'SearchController',
     controllerAs: 'ctrl',
     bindToController: true,
-    controller: function($scope){
-      this.result = () => {};
-    },
     templateUrl: 'src/templates/search.html'
   };
 });
