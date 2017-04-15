@@ -4,11 +4,12 @@ angular.module('video-player', [])
     scope: {},
     controllerAs: 'ctrl',
     bindToController: true,
-    controller: function($scope){
+    controller: function($scope) {
+      //console.log(window.exampleVideoData)
       this.selectVideo = function () {};
       this.searchResults = function () {};
       this.currentVideo = {};
-      this.videos = [];
+      this.videos = [];//exampleVideoData;
     },
     templateUrl: 'src/templates/app.html'
   };

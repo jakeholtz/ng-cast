@@ -2,6 +2,12 @@ angular.module('video-player')
 
 .directive('search', function() {
   return {
-    // TODO
+    scope: {},
+    controllerAs: 'ctrl',
+    bindToController: true,
+    controller: function($scope){
+      this.result = () => {};
+    },
+    templateUrl: 'src/templates/search.html'
   };
 });
