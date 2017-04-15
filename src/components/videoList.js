@@ -4,7 +4,7 @@ angular.module('video-player')
     scope: {
       videos: '<'
     },
-    restrict: 'E',
+    // restrict: 'E',
     controllerAs: 'ctrl',
     bindToController: true,
     controller: function(){ //check & function binding

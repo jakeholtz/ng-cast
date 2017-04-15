@@ -4,10 +4,10 @@ angular.module('video-player')
     scope: {
       video: '<'
     },
+    restrict: 'E',
     controllerAs: 'ctrl',
     bindToController: true,
     controller: function(){ //check & function binding
-      // console.log(this);
     },
     templateUrl: 'src/templates/videoListEntry.html'
   };
