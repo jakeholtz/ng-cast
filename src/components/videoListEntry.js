@@ -1,6 +1,7 @@
 angular.module('video-player')
 .directive('videoListEntry', function() {
   return {
-    // TODO
+    scope: {obj: '='},
+    template: '</div></div>'
   };
 });
